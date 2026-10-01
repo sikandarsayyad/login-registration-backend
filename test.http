@@ -1,0 +1,79 @@
+
+# POST http://localhost:5000/api/register
+# Content-Type: application/json
+
+# {
+#      "name":"harry",
+#      "email":"harry@gmail.com",
+#      "password":"test@123"
+# }
+
+# POST http://localhost:5000/api/send-email-otp
+# Content-Type: application/json
+
+# {
+#      "userId": 1
+# }
+
+# POST http://localhost:5000/api/verify-email-otp
+# Content-Type: application/json
+
+# {
+#      "challengeId": 7,
+#      "otp": "660112"
+# }
+
+# POST http://localhost:5000/api/send-sms-otp
+# Content-Type: application/json
+
+# {
+#      "userId": 4
+# }
+
+# POST http://localhost:5000/api/verify-sms-otp
+# Content-Type: application/json
+
+# {
+#      "challengeId": 9,
+#      "otp": "711680"
+# }
+
+# POST http://localhost:5000/api/login
+# Content-Type: application/json
+
+# {
+#      "email":"abc@gmail.com",
+#      "password":"abc@1234"
+# }
+
+# POST http://localhost:5000/api/send-login-otp
+# Content-Type: application/json
+
+# {
+#      "userId": 3
+# }
+
+# POST http://localhost:5000/api/verify-login-otp
+# Content-Type: application/json
+
+# {
+#      "challengeId": 22,
+#      "otp": "937643"
+# }
+
+# GET http://localhost:5000/api/me
+
+# POST http://localhost:5000/api/logout
+
+# POST http://localhost:5000/api/token
+
+# GET  http://localhost:5000/api/protected
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTc4OTgwOTYyOSwiZXhwIjoxNzg5ODEwNTI5fQ.rZFv1mqm1s-88MwEsd_wb7juMAkfT5Rr7D6OlBMrzCU
+
+POST http://localhost:5000/api/forgot-password
+Content-Type: application/json
+
+# {
+#      "email":"abc@gmail.com"
+# }
+
